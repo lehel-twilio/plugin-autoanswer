@@ -1,0 +1,13 @@
+[
+  {
+    "name": "AutoanswerPlugin",
+    "version": "0.0.0",
+    "class": "AutoanswerPlugin",
+    "requires": [
+      {
+        "@twilio/flex-ui": "^1.0.0"
+      }
+    ],
+    "src": "http://localhost:8080/plugin-autoanswer.js"
+  }
+]
