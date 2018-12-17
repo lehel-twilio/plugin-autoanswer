@@ -7,6 +7,7 @@ export default class AutoanswerPlugin extends FlexPlugin {
   init(flex, manager) {
     manager.workerClient.on("reservationCreated", reservation => {
       Flex.Actions.invokeAction("AcceptTask", {sid: reservation.sid});
+      Flex.Actions.invokeAction("SelectTask", {sid: reservation.sid});
     });
   }
 }
